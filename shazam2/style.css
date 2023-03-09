@@ -81,3 +81,50 @@ footer {
     align-items: center;
     margin-top: auto;
 }
+
+h1 {
+    margin: 10px;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.coluna {
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.coluna img {
+    box-sizing: border-box;
+    border: 5px solid white;
+    width: 100%;
+}
+
+@media ( max-width: 480px ) {
+
+    header, nav, nav a, section, aside {
+        width: 100%;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    main {
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    header a img {
+        width: 70%;
+    }
+    nav a {
+        margin-top: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+    }
+}
