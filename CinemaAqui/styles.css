@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', Tahoma;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    background-color: black;
+    color: red;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background-color: red;
+    color: white;
+}
+
+header nav {
+    padding-right: 20px;
+}
+
+main {
+    background-color: #f1f1f1;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 20px;
+    width: 70%;
+}
+
+.section p {
+    margin-top: 20px;
+}
+
+.aside {
+    box-sizing: border-box;
+    margin: 20px 50px 20px 20px;
+    width: 30%;
+}
+
+.aside img {
+    border: 5px solid white;
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+}
+
+.coluna {
+    height: 400px;
+    width: 230px;
+    background-color: white;
+    margin: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 50px #ccc;
+    border: 1px solid #ccc;
+}
+
+.coluna img {
+    width: 100%;
+}
+
+.coluna p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+@media(max-width:480px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    header nav {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav a {
+        width: 100%;
+    }
+
+    header nav {
+        padding-right: 0;
+    }
+
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    .coluna {
+        box-sizing: border-box;
+        margin: 30px;
+        width: 90%;
+        height: 95%;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section {
+        font-size: 18px;
+        box-sizing: border-box;
+        margin: 20px;
+        width: 100%;
+    }
+    
+    .aside {
+        box-sizing: border-box;
+        margin: 20px 50px 20px 20px;
+        width: 90%;
+    }
+
+}
