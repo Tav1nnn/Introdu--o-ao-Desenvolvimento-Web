@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/icone.png">
+    <title>Sputify</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" title="home"><img src="images/logo.png" alt="Logo" title="Logo"  class="logo"></a>
+
+        <a href="#" title="Menu" class="menu" onclick="mostrar()"><img src="./images/menu.png" alt="Menu"></a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="imagens (4).zip">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Últimos Lançamentos</h1>
+        <div class="grid">
+            <div class="coluna"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <img src="images/logob.png" alt="">
+        </p>
+        <p>
+            Desenvolvido por Otavio
+        </p>
+    </footer>
+
+    <script>
+        function mostrar() {
+            document.querySelector("nav").classList.toggle("mostrar");
+        }
+    </script>
+    
+</body>
+</html>
